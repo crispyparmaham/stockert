@@ -1,4 +1,5 @@
 // Import important packages
+require('dotenv').config();
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
@@ -87,7 +88,7 @@ const cssInspector = () => {
         // Write sourcemap
         .pipe(gulpif(!isProduction(), sourcemaps.write('')))
         // Write everything to destination folder - CHANGE HERE THE DOMAIN
-        .pipe(gulp.dest(`${dest}/css/inspector:/www.mk-montagetechnik-shop.de/`));
+        .pipe(gulp.dest(dest + process.env.PATH_TO_INSPECTOR));
 };
 
 
