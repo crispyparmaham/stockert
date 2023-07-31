@@ -1,5 +1,5 @@
 {
-  "name": "start-code-ede-shop",
+  "name": "stockert",
   "version": "0.0.0",
   "description": "Compiled CSS für den MK Montage GmbH Shop",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crispyparmaham/mk-montage.git"
+    "url": "git+https://github.com/crispyparmaham/stockert.git"
   },
   "author": "Lucas Dühr | Agentur 54",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crispyparmaham/mk-montage/issues"
+    "url": "https://github.com/crispyparmaham/stockert/issues"
   },
-  "homepage": "https://github.com/crispyparmaham/mk-montage#readme",
+  "homepage": "https://github.com/crispyparmaham/stockert#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "babel-runtime": "^6.26.0",
