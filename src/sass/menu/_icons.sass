@@ -1,0 +1,120 @@
+#template_header #template_main_nav .template_wgprev_heading
+    color: #474D4A
+    font-weight: 400
+    
+#template_header #template_main_nav, .startseite-wrapper
+        
+    .popup_div, .link-nav-wrap
+        padding: 0
+        border-bottom: 4px solid $secondary
+        overflow: hidden
+        li 
+                list-style: none
+                margin: 0
+                padding: 0
+                a 
+                        text-decoration: none
+                        color: $primary
+                        padding: 15px 20px 
+                        display: block
+                        
+                        
+        .template_nav_span
+            .template_wgprev_heading
+                position: relative
+                padding: 3px 30px
+                border-bottom: 1px solid $primary
+                border-right: 1px solid $primary
+                box-sizing: border-box
+
+                &:hover
+                    background: $primary
+                    color: #fff !important
+                    border-bottom-color: $primary
+
+                &:hover i.mdi.mdi-chevron-right::before
+                    filter: grayscale(1) brightness(100)
+                
+                i.mdi.mdi-chevron-right
+                    opacity: 1
+                    visibility: visible
+
+                    &::before
+                        content:""
+                        background-size: contain
+                        background-position: center
+                        background-repeat: no-repeat
+                        display: inline-block
+                        width: 22px
+                        height: 16px
+                        position: relative
+                        top: 50%
+                        left: -10px
+
+
+                &[title="Angebote"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/sale.png)
+
+                &[title="Elektrowerkzeuge"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/circle-saw.png)
+
+                &[title="Handwerkzeug"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/spanners.png)
+
+                &[title="Messen"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/angle-ruler.png)
+
+                &[title="Befestigungstechnik "] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/screw.png)
+
+                &[title="Arbeitsschutz"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/hard-hat.png)
+
+                &[title="Betriebs- & Baustellenausstattung"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/ladder.png)
+
+                &[title="Schweißen"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/blow-torch.png)
+
+                &[title="Gartenbau"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/showel.png)
+
+                &[title="Materialbearbeitung"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/air-can.png)
+
+                &[title="Reinigen"] > i.mdi::before
+                        background-image: url(benutzerdaten/400032/shop/layout/images/icons/air-can.png)
+
+                
+            
+                ~ ul 
+                    padding-bottom: 40px
+                    li 
+                        border-bottom-color: $secondary
+
+                        a 
+                            font-weight: 400
+                            font-family: $regular
+                            font-size: 16px
+                            transition: ease all 400ms
+
+                            &:hover
+                                background: transparent 
+                                color: $secondary
+                                text-decoration: none
+                                
+
+@media only screen and (max-width: 60em)
+        #template_header #template_main_nav .template_wgprev_heading .mdi 
+                display: initial !important
+
+        #template_header #template_main_nav .template_nav_sortiment_button ul, #template_header #template_main_nav span.template_nav_span 
+                padding: 0
+        
+        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading
+                padding: 5px 30px 3px 30px
+
+        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading i.mdi.mdi-chevron-right:before
+                top: 3px
+                                        
+

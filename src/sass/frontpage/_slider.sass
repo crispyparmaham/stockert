@@ -1,0 +1,47 @@
+.startseite-wrapper 
+    .slider-box-wrap
+        margin-left: 7.5px
+        width: calc(75% - 7.5px)
+
+.startseite-wrapper 
+    .slider-box-wrap 
+        .slider-wrap
+            width: 100%
+
+.startseite-wrapper 
+    .slider-box-wrap 
+        .slider-wrap 
+            .slide img
+                max-width: 100%
+
+.startseite-wrapper 
+    .slider-box-wrap img 
+        display: block
+        width: 100%!important
+
+
+body .slick-next, body .slick-prev
+    background: #fff
+    box-shadow: 0 0 10px rgba(0,0,0,.2)
+    height: 70px
+    top: 50%
+    transform: translateY(-50%)
+    transition: all .4s ease
+    width: 40px
+    z-index: 99
+
+body .slick-prev::before 
+    content: "\276E"
+
+body .slick-next::before
+    content: "\276F"
+
+body .slick-next:before, body .slick-prev:before
+    color: $primary
+    display: block
+    font-family: inherit
+    font-size: 35px
+    line-height: 1
+    margin: 0 auto
+    opacity: 1
+    margin-top: 12px
