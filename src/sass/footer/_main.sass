@@ -1,10 +1,13 @@
 @import './fonts'
+@import './newsletter'
 
 
 #template_footer_wrapper
     background: $primary
     color: #fff
     margin-top: 30px
+    padding-bottom: 30px
+    position: relative
 
 #template_footer_wrapper #template_footer
     padding: 0
@@ -26,13 +29,57 @@
     display: block!important
     padding: 0
 
-#sub_template_footer
-    background: #4E4E4E
-    max-width: 100%
-    padding: 0
-
 #template_footer ul:first-child
     width: 66.66%
+
+#template_footer ul:nth-child(2)
+    width: 33.34%
+
+.contact-wrap
+    background: $secondary
+    display: flex
+    flex-direction: column
+    margin-right: auto
+    margin-top: -20px
+    padding: 2em
+    position: relative
+    z-index: 2
+
+.contact-wrap h2
+    text-transform: uppercase
+
+.contact-wrap:before
+    background: $primary
+    content: ""
+    height: 20px
+    left: 100%
+    position: absolute
+    top: 20px
+    width: 20px
+
+.contact-wrap:after
+    border-bottom: 20px solid transparent
+    border-left: 15px solid #171717
+    border-top: 20px solid transparent
+    box-sizing: border-box
+    content: ""
+    display: block
+    height: 0
+    left: 100%
+    position: absolute
+    top: 0
+    transform: translate(0)
+    transform-origin: center
+    width: 0
+    z-index: -1
+
+.contact-icons
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+
+.contact-icons img
+    margin-right: 10px
 
 #template_footer_wrapper ul 
     border: 0
@@ -70,8 +117,18 @@
     flex-wrap: wrap
     padding-top: 50px
 
+.footer-col-100
+    margin-top: 50px
+
 .footer-col-50 
     width: 50%
+
+.footer-col-50 address
+    margin-bottom: 30px
+    line-height: 1.5
+
+.footer-col-50 p
+    line-height: 1.5
 
 #template_footer_wrapper ul
     border: 0
@@ -97,23 +154,31 @@
 #template_footer_wrapper ul li
     list-style: "\2713"
     padding-left: 10px
+    margin-bottom: 5px
 
 .grid-wrap-footer
     display: flex
     flex-wrap: wrap
 
-.grid-wrap-footer>img
+.grid-wrap-footer > img
     display: block
     margin-bottom: 10px
     margin-right: 10px
 
-#sub_template_footer 
-    width: 100%
-    max-width: 1300px
-    margin: 0px auto
-    background: #4E4E4E
-    padding: 0px 0px 40px
-    box-sizing: border-box
-    clear: both
-    display: table
+.grid-wrap-footer .social-wrap
+    margin-right: 20px
+
+#social .social-wrap
+    display: flex
+    flex-direction: row
+    align-items: center
+
+#social .social-wrap img
+    width: 20px
+    height: auto
+    margin-right: 10px
+
+#template_footer .template_footer_row .template_footer_container:nth-child(4)
+    display: none
+
 
