@@ -11,4 +11,7 @@ Change URL of Shop in .env File.
 When everything is ready start with "npm run dev"
 
 URL für Template 8 Shop:
-`&template=basis_shop_template_8`
+
+https://shop.maschinen-stockert.de/index.php?page=startseite_dev&template=basis_shop_template_8
+
+benutzerdaten/400032/shop/layout/images/icons/phone-icon.png

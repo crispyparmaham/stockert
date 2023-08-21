@@ -1,32 +1,381 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDE Shop</title>
-
-  <link rel="stylesheet" href="./css/main.min.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-
-<body>
-
-
-  <div class="user_content">
-    <div class="startseite-wrapper">
+<div class="startseite-wrapper">
+  <div class="head-slider-link-wrap">
+    <div class="link-nav-wrap">
+      <nav>
+        <ul>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR182_000001&amp;name=Angebote&amp;SessID=session" title="Angebote">
+                <i class="mdi mdi-chevron-right"></i>Angebote </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR217_000001&amp;name=Elektrowerkzeuge&amp;SessID=session" title="Elektrowerkzeuge ">
+                <i class="mdi mdi-chevron-right"></i>Elektrowerkzeuge </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR221_000001&amp;name=Handwerkzeug+&amp;SessID=session" title="Handwerkzeug ">
+                <i class="mdi mdi-chevron-right"></i>Handwerkzeug </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR222_000001&amp;name=Mess-+%26+Pr%FCfwerkzeuge&amp;SessID=session" title="Mess- &amp; Prüfwerkzeuge">
+                <i class="mdi mdi-chevron-right"></i>Mess- &amp; Pr&uuml;fwerkzeuge </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR219_000001&amp;name=Maschinenwerkzeuge&amp;SessID=session" title="Maschinenwerkzeuge">
+                <i class="mdi mdi-chevron-right"></i>Maschinenwerkzeuge </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR224_000001&amp;name=Chemisch+%26+Technische+Produkte&amp;SessID=session" title="Chemisch &amp; Technische Produkte">
+                <i class="mdi mdi-chevron-right"></i>Chemisch &amp; Technische Produkte </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR223_000001&amp;name=Befestigungstechnik+&amp;SessID=session" title="Befestigungstechnik ">
+                <i class="mdi mdi-chevron-right"></i>Befestigungstechnik </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR226_000001&amp;name=Arbeitskleidung+%26+Arbeitsschutz&amp;SessID=session" title="Arbeitskleidung &amp; Arbeitsschutz">
+                <i class="mdi mdi-chevron-right"></i>Arbeitskleidung &amp; Arbeitsschutz </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR225_000001&amp;name=Betriebs-+%26+Baustellenausstattung&amp;SessID=session" title="Betriebs- &amp; Baustellenausstattung">
+                <i class="mdi mdi-chevron-right"></i>Betriebs- &amp; Baustellenausstattung </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR220_000001&amp;name=Drucklufttechnik+&amp;SessID=session" title="Drucklufttechnik ">
+                <i class="mdi mdi-chevron-right"></i>Drucklufttechnik </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR218_000001&amp;name=Standardmaschinen+&amp;SessID=session" title="Standardmaschinen ">
+                <i class="mdi mdi-chevron-right"></i>Standardmaschinen </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR230_000001&amp;name=Schwei%DFen+%26+L%F6ten&amp;SessID=session" title="Schweißen &amp; Löten">
+                <i class="mdi mdi-chevron-right"></i>Schwei&szlig;en &amp; L&ouml;ten </a>
+            </span>
+          </li>
+          <li>
+            <span class="template_nav_span">
+              <a class="template_wgprev_heading" href="shop.php?cat=VIR227_000001&amp;name=Garten-+%26+Landschaftsbau&amp;SessID=session" title="Garten- &amp; Landschaftsbau">
+                <i class="mdi mdi-chevron-right"></i>Garten- &amp; Landschaftsbau </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="slider-box-wrap">
+      <!-- ************************************************************************************************* -->
+      <!-- **********************           SLIDER STARTSEITE                  ***************************** -->
+      <!-- ************************************************************************************************* -->
+      <div class="slider-wrap" id="slider-startseite">
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR182_000001&amp;name=Angebote&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/eumacopTools.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2051||3363&amp;name=Festool&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/festool-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2091||8896&amp;name=Mafell&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/mafell-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR217_20819076||6553&amp;name=Dewalt&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/dewalt-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR223_2391||5576&amp;name=HECO-Schrauben&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/heco-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2079228||1010&amp;name=Makita&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/makita-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2111||1225&amp;name=Fein&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/fein-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR221_212567f5165-f69b-4fc0-8a54-1915ff63daf8||8775&amp;name=Wera&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/wera-slider.jpg" />
+        </a>
+        <a class="slide" href="https://www.papenbroock24.de/shop.php?cat=VIR221_210000000060000771200040023||954&amp;name=Bessey&amp;SessID=session">
+          <img alt="Slider Image" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/bessey-slider.jpg" />
+        </a>
+      </div>
+      <div class="teaser-box-wrap">
+        <div class="teaser-box">
+          <img alt="Materialbearbeitung" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/materialbearbeitung.jpg" />
+          <span>Materialbearbeitung</span>
+          <a class="button button-red" href="https://www.papenbroock24.de/shop.php?cat=VIR219_000001&amp;name=Maschinenwerkzeuge&amp;SessID=session">Mehr dazu</a>
+        </div>
+        <div class="teaser-box">
+          <img alt="Klebstoffe" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/klebstoffe.jpg" />
+          <span>Klebstoffe</span>
+          <a class="button button-red" href="https://www.papenbroock24.de/shop.php?cat=VIR224_23417386272||3716&amp;name=Klebstoffe&amp;SessID=session">Mehr dazu</a>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
-  <script src="/js/main.bundle.js"></script>
-
-</body>
-</html>
+  <div class="startseite-white-wrapper">
+    <div class="top-marken-wrapper">
+      <h2>Unsere Top-Marken</h2>
+      <!-- ************************************************************************************************* -->
+      <!-- **********************           TOP MARKEN SLIDER                  ***************************** -->
+      <!-- ************************************************************************************************* -->
+      <div class="top-marken-slider" id="top-marken-slider">
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2051||3363&amp;name=Festool&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Festool" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock1.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/shop/productimages/214//logo/eum300828.jpg" />
+            </div>
+            <span>Zu den FESTOOL Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2091||8896&amp;name=Mafell&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="mafell" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock6.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/shop/productimages/50032080/logo/eum300904.jpg" />
+            </div>
+            <span>Zu den MAFELL Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2079228||1010&amp;name=Makita&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Makita" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock4.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/shop/productimages/214//logo/pim317158.jpg" />
+            </div>
+            <span>Zu den MAKITA Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_20819076||6553&amp;name=Dewalt&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="dewalt" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-2.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/DeWalt_Logo.svg.png" />
+            </div>
+            <span>Zu den DEWALT Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_2111||1225&amp;name=Fein&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Fein" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-3.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/fein-logo.png" />
+            </div>
+            <span>Zu den FEIN Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR221_212567f5165-f69b-4fc0-8a54-1915ff63daf8||8775&amp;name=Wera&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Wera" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock2.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/shop/productimages/214//logo/hws405849.jpg" />
+            </div>
+            <span>Zu den WERA Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR221_210000000060000771200040023||954&amp;name=Bessey&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Bessey" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-5.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/bessey-logo-de.png" />
+            </div>
+            <span>Zu den BESSEY Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR223_2391||5576&amp;name=HECO-Schrauben&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Heco" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-4.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/heco-logo.jpg" />
+            </div>
+            <span>Zu den HECO Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR224_23216933091||8804&amp;name=Ponal-Leim-Klebstoffe&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Ponal" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-5.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/ponal-logo.jpg" />
+            </div>
+            <span>Zu den PONAL Produkten</span>
+          </div>
+        </div>
+        <div class="slick-slide top-marke">
+          <a class="fw-link" href="https://www.papenbroock24.de/shop.php?cat=VIR217_14612821372||8273&amp;name=Lamello&amp;SessID=session">
+            <span>Zu den Produkten</span>
+          </a>
+          <img alt="Lamello" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/top-marken-papenbroock-1-6.jpg" />
+          <div class="top-marke-text-wrap">
+            <div>
+              <img alt="Logo" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/logo-lamello.png" />
+            </div>
+            <span>Zu den LAMELLO Produkten</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="startseite-white-wrapper">
+    <div class="angebotswrapper">
+      <h2>Angebote</h2>@@schaufensterartikel@@ <br />
+      <br />&nbsp;
+    </div>
+  </div>
+  <div class="startseite-white-wrapper">
+    <div class="teaser-box-wrap teaser-box-wrap-big">
+      <div class="teaser-box">
+        <img alt="Teaser Box Image 1" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/exklusiv-tb.jpg" />
+        <span>Papenbroock Exklusiv</span>
+        <a class="button button-blue" href="https://www.papenbroock24.de/shop.php?cat=VIR182_14582686226%7C%7C7575&amp;name=Exklusiv-Produkte&amp;SessId=session">Mehr dazu</a>
+      </div>
+      <div class="teaser-box">
+        <img alt="Teaser Box Image 2" src="https://www.papenbroock24.de/benutzerdaten/400250/uploads_layout_2021/ersatzteile-tb.jpg" />
+        <span>Ersatzteile</span>&nbsp; <a class="button button-blue" href="https://www.papenbroock24.de/shop.php?cat=VIR182_14596240034||8957&amp;name=Ersatzteileaktion&amp;SessID=session">Mehr dazu</a>
+      </div>
+    </div>
+  </div>
+  <div class="startseite-white-wrapper">
+    <div class="tab-wrapper">
+      <div class="tab-navigation">
+        <button class="warum active">Warum Papenbroock?</button>
+        <button class="fachbereiche">Alles f&uuml;r das Handwerk</button>
+        <button class="serviceleitungen">Qualit&auml;tsversprechen</button>
+      </div>
+      <div class="tab-contents">
+        <div class="warum-tab active tab">
+          <h2>Unsere Erfolgsstory: Warum wir der bessere Werkzeug-Onlineshop f&uuml;r Dich sind.</h2>
+          <p>Papenbroock ist seit &uuml;ber 70 Jahren der Fachh&auml;ndler f&uuml;r das Handwerk. Wir betreuen unsere Kunden bei der Beschaffung von Werkzeug und Material &ndash; und das so einfach und schnell wie m&ouml;glich. Bei uns spielt die Menge keine Rolle &ndash; bei unserem Werkzeug-Onlineshop erledigst du deinen gesamten Einkauf bei einem einzigen H&auml;ndler. Das spart Zeit und Geld.</p>
+          <ul>
+            <li>H&ouml;chste Qualit&auml;t, dank Marken-Produkten</li>
+            <li>Schnelle und einfache Bestellungen, dank Produktfinder, Merklisten und einem optimierten Bestellvorgang</li>
+            <li>Bei einem Produkt unsicher? Unser Team besteht aus Spezialisten und ber&auml;t dich gerne pers&ouml;nlich</li>
+          </ul>
+          <p>Unser Angebot f&uuml;r Dich:</p>
+          <h3>Beratung vom Profi</h3>
+          <p>Wir bieten Dir vor jedem Kauf eine intensive Beratung durch unsere geschulten Produkt- und Markenspezialisten. Und das nicht &uuml;ber eine 0800er Hotline, sondern durch Deinen pers&ouml;nlichen Kundenberater mit Durchwahl.</p>
+          <p>M&ouml;chtest Du Dein Werkzeug vor Ort ausprobieren? Auch das ist kein Problem. Vereinbare einfach einen Termin und besuche uns in unserer Profi-Ausstellung mit zahlreichen Produktwelten in Rellingen.</p>
+          <p>Du hast einen Handwerksbetrieb und m&ouml;chtest Deine Werkstatt neu ausstatten oder ben&ouml;tigst unsere Produktkompetenz vor Ort? Dein Papenbroock-Produktspezialist besucht und ber&auml;t Dich auch in Deinem Betrieb.</p>
+        </div>
+        <div class="fachbereiche-tab tab">
+          <h2>&bdquo;Alles f&uuml;r das Handwerk&ldquo;</h2>
+          <p>Das meinen wir w&ouml;rtlich. Vom Akku-Schrauber bis zum CNC-Bearbeitungszentrum umfasst unser Sortiment alles, was das Handwerk ben&ouml;tigt und noch vieles mehr. Unsere Markenspezialisten sind f&uuml;r Dich stets auf der Suche nach Produktneuheiten- und Innovationen: Der erste transportable CNC-Fr&auml;sroboter der Welt? Haben wir.</p>
+          <p>Papenbroock24 ist ein Werkzeug- Onlineshop f&uuml;r alle F&auml;lle</p>
+          <p>Durch jahrzehntelange Lieferantenbindung mit renommierten Herstellern wie Festool, Makita, Mafell, Dewalt, Fein, Mirka und vielen anderen bieten wir Dir nicht nur g&uuml;nstige Exklusivangebote sondern das Gesamtsortiment.</p>
+          <h3>Das richtige Handwerkzeug f&uuml;r Dich</h3>
+          <p>Egal ob Schraubenzieher, Schraubzwingen oder Stechbeitel, bei uns findest Du nur qualitativ hochwertiges Handwerkzeug. Wir f&uuml;hren renommierte Hersteller wie Wera, Bessey, Ulmia oder Knipex. Damit Dein Werkzeug die gleiche Qualit&auml;t hat wie Deine Arbeit.</p>
+          <h3>Verbrauchsmaterial f&uuml;r jeden Bedarf</h3>
+          <p>Durch unsere Hersteller wie Ponal, Heco-Schrauben oder Soudal sind wir auch im Bereich von Verbrauchsmaterialien wie Leim, Schrauben oder Klebstoffe der richtige Ansprechpartner. Selbstverst&auml;ndlich liefern wir sowohl in kleinen als auch gro&szlig;en Mengen.</p>
+          <h3>Branchen&uuml;bergreifend stark</h3>
+          <p>Unsere Produkte unterst&uuml;tzen das Handwerk in allen Branchen: Ob Tischlerei, Zimmerei, Maler und Lackierer, Elektriker oder Dachdecker. Alle Gewerke vom selbstst&auml;ndigen Handwerker bis zum Industrieunternehmen geh&ouml;ren zu unseren Kunden.</p>
+        </div>
+        <div class="serviceleistungen-tab tab">
+          <h2>Papenbroock Qualit&auml;tsversprechen</h2>
+          <p>Durch unsere &uuml;ber 70-j&auml;hrige Expertise im Bereich Werkzeuge und Verbrauchsmaterialien umfasst unser Angebot nur Artikel, mit denen wir auch arbeiten w&uuml;rden. Unsere Spezialisten &uuml;berpr&uuml;fen st&auml;ndig die Zuverl&auml;ssigkeit und Leistung unseres Sortiments, denn jeder Handwerker ist nur so gut wie sein Werkzeug.</p>
+          <p>F&uuml;r den Fall der F&auml;lle stehen Dir bei Problemen ausgebildete Servicespezialisten- und Techniker mit Rat und Tat zur Seite und auch hier gilt unser Versprechen: Keine Hotline, f&uuml;r jedes Problem ein direkter Ansprechpartner und auch eine L&ouml;sung.</p>
+          <h3>Papenbroock Profi Ausstellung</h3>
+          <p>In unserer Ausstellung in Rellingen findest Du Produktwelten von Festool, Makita, Mafell, Dewalt, Wera, Bessey, Heco-Schrauben und viele mehr. Hier hast du die M&ouml;glichkeit, alle Produkte in die Hand zu nehmen und zu testen. Unsere Marken-Experten vor-Ort beraten Dich dabei gerne fachkundig und beantworten Dir jede Frage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>@@JAVASCRIPT <script data-ignoreCookie="true" type="text/cookiescript"> jQuery(function () {
+       $(function () {
+           $("#top-marken-slider").slick({
+               slidesToShow: 4,
+               slidesToScroll: 1,
+               responsive: [
+                   {
+                       breakpoint: 1124,
+                       settings: {
+                           slidesToShow: 3,
+                       },
+                   },
+                   {
+                       breakpoint: 768,
+                       settings: {
+                           slidesToShow: 2,
+                       },
+                   },
+                   {
+                       breakpoint: 500,
+                       settings: {
+                           slidesToShow: 2,
+                       },
+                   },
+               ],
+           });
+       });
+   });
+   
+   // For Tabs
+   document.addEventListener("DOMContentLoaded", () => {
+    let tabNavigation = document.querySelectorAll(".tab-navigation > button");
+    let tabContents = document.querySelectorAll(".tab-contents > .tab");
+    for (let i in tabNavigation) {
+        let btn = tabNavigation[i];
+        btn.addEventListener("click", () => {
+            for (let others of tabNavigation) {
+                others.classList.remove("active");
+            }
+            btn.classList.add("active");
+            for (let othertabs of tabContents) {
+                othertabs.classList.remove("active");
+            }
+            tabContents[i].classList.add("active");
+        });
+    }
+   });
+   
+   jQuery(function () {
+       $("#slider-startseite").slick({
+           autoplay: true,
+           autoplaySpeed: 3000,
+       });
+   });
+</script> _CODE@@

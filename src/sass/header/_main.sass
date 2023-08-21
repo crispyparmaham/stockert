@@ -1,6 +1,7 @@
 @import './fonts'
 @import './usp'
 @import './search'
+@import './icons'
 
 
 
@@ -12,12 +13,30 @@
 #template_header 
     #template_main_nav
         background: $darkGrey
-        padding: 5px 40px
-
-.template_wrapper#top_wrapper
-     #template_header 
-        .contentholder
-            padding-top: 30px
+        padding: 0 40px
 
 #template_header_list
     padding: 20px
+    margin-top: 30px
+    width: 60%
+
+#template_header #template_logo 
+    max-width: 22%
+
+#template_main_nav>li>a
+    padding: 10px 20px
+
+#template_main_nav>li>a
+     &::after
+        content:""
+        background-size: contain
+        background-repeat: no-repeat
+        display: inline-block
+        width: 22px
+        height: 16px
+        position: relative
+        top: 50%
+        right: -10px
+        transform: translateY(25%)
+        background-image: url(benutzerdaten/400032/shop/layout/images/icons/menu-arrow.png)
+        

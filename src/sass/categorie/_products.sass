@@ -1,0 +1,38 @@
+.cat_outer_frame:hover 
+    border: 0
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+
+.cat_outer_frame 
+    background: #fff
+    border: 0
+    margin: 10px
+    padding: 0
+    position: relative
+    transition: all .3s ease
+    width: calc(33.33% - 20px)
+    z-index: 100
+
+.cat_outer_frame .cat_image_frame
+    height: calc(100% - 40px)
+
+.cat_outer_frame .cat_image_frame .cat_title_frame
+    border: 0
+    bottom: 0
+    opacity: 1
+    position: absolute
+    top: auto
+    transition: all .3s ease
+
+.cat_title_frame h3
+    font-size: 13px
+    font-weight: 400
+
+.cat_outer_frame:hover
+    border: 0
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+
+
+.cat_outer_frame:hover .cat_title_frame 
+    background-color: $primary
+    border-bottom: 3px solid $secondary
+    color: #fff
