@@ -1,0 +1,54 @@
+.startseite-wrapper 
+    .angebotswrapper
+        display: flex
+        flex-wrap: wrap
+        padding: 50px 0
+        position: relative
+
+.startseite-wrapper 
+    .angebotswrapper 
+        .artangebote_outer_frame
+            border-right: 1px solid #ebecef
+            margin: 0 20px 0 0
+            width: calc(20% - 20px)
+
+.artangebote_outer_frame 
+    .artangebote_popup
+        border-color: #cacaca
+        height: 360px
+
+.artangebote_outer_frame 
+    .artangebote_title_frame
+        color: $primary
+        font-size: 14px
+
+.artangebote_outer_frame 
+    .artangebote_image_frame
+        height: 240px
+        margin-top: 20px
+
+.artangebote_outer_frame 
+    .artangebote_preis_frame
+        background-color: transparent
+        background: transparent
+        background-image: linear-gradient(0deg,#fff,hsla(0,0%,100%,0))
+
+
+@media (max-width: 1430px)
+    .startseite-wrapper 
+        .angebotswrapper 
+            .artangebote_outer_frame
+                width: calc(25% - 20px)
+
+@media (max-width: 1120px)
+    .startseite-wrapper 
+        .angebotswrapper 
+            .artangebote_outer_frame
+                width: calc(33.33% - 20px)
+
+
+@media (max-width: 786px)
+    .startseite-wrapper 
+        .angebotswrapper 
+            .artangebote_outer_frame
+                width: calc(50% - 20px)
