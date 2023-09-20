@@ -35,8 +35,8 @@
             </li>
             <li>
               <span class="template_nav_span">
-                <a class="template_wgprev_heading" href="https://shop.maschinen-stockert.de/shop.php?cat=15330245440&name=Befestigungsmaterial&SessID=session" title="Befestigungstechnik">
-                  <i class="mdi mdi-chevron-right"></i>Befestigungstechnik</a>
+                <a class="template_wgprev_heading" href="https://shop.maschinen-stockert.de/shop.php?cat=15330245440&name=Befestigungsmaterial&SessID=session" title="Befestigungsmaterial">
+                  <i class="mdi mdi-chevron-right"></i>Befestigungsmaterial</a>
               </span>
             </li>
             <li>
@@ -59,8 +59,8 @@
             </li>
             <li>
               <span class="template_nav_span">
-                <a class="template_wgprev_heading" href="https://shop.maschinen-stockert.de/shop.php?cat=15316350178&name=L%F6ten+%26+Schweissen&SessID=session" title="Schweißen">
-                  <i class="mdi mdi-chevron-right"></i>Schweißen</a>
+                <a class="template_wgprev_heading" href="https://shop.maschinen-stockert.de/shop.php?cat=15316350178&name=L%F6ten+%26+Schweissen&SessID=session" title="Löten & Schweissen">
+                  <i class="mdi mdi-chevron-right"></i>Löten & Schweissen</a>
               </span>
             </li>
             <li>
@@ -149,40 +149,6 @@
          });
      });
      
-     document.addEventListener('DOMContentLoaded', function() {
-      // Neues <li>-Element erstellen
-      var newLiElement = document.createElement('li');
-      newLiElement.className = 'template_header_item template_fav';
-    
-      var newAnchorElement = document.createElement('a');
-      newAnchorElement.className = 'popup_toggle';
-      newAnchorElement.href = 'orderlist.php?SessID=session';
-
-      var newIElement = document.createElement('i');
-      newIElement.className = 'mdi mdi-fav';
-      newIElement.title = 'Merkzettel';
-    
-      var newDivElement = document.createElement('div');
-      newDivElement.className = 'template_fav_desc mobile_hide';
-      newDivElement.textContent = 'Merkzettel';
-    
-      newAnchorElement.appendChild(newIElement);
-      newAnchorElement.appendChild(newDivElement);
-
-      newLiElement.appendChild(newAnchorElement);
- 
-      var ulElement = document.getElementById('template_header_list');
-    
-      if (ulElement) {
-        var firstLiElement = ulElement.querySelector('li');
-    
-
-        ulElement.insertBefore(newLiElement, firstLiElement);
-      } else {
-        console.error("UL-Element wurde nicht gefunden.");
-      }
-    });
-    
      
      jQuery(function () {
          $("#slider-startseite").slick({
