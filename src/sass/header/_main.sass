@@ -5,7 +5,6 @@
 @import './sticky'
 
 
-
 #template_header 
     .contentholder
         max-width: 100%
@@ -14,15 +13,17 @@
 #template_header 
     #template_main_nav
         background: $darkGrey
-        padding: 0 40px
+        padding: 0
+        border-bottom: 0
 
 #template_header_list
-    padding: 20px
-    margin-top: 30px
-    width: 60%
+    padding: 0
+    margin: 25px 0 25px 0
+    width: 65%
 
 #template_header #template_logo 
-    max-width: 22%
+    max-width: 26%
+    margin-top: 10px
 
 #template_main_nav>li>a
     padding: 10px 20px
@@ -40,6 +41,26 @@
         right: -10px
         transform: translateY(25%)
         background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/menu-arrow.png)
+
+
+@media (min-width: 1199px)
+    .template_wrapper#top_wrapper #template_main_nav:before
+        background: $darkGrey
+        content: ""
+        height: 100%
+        left: -100%
+        position: absolute
+        top: 0
+        width: 100%
+
+    .template_wrapper#top_wrapper #template_main_nav:after
+        background: $darkGrey
+        content: ""
+        height: 100%
+        position: absolute
+        right: -100%
+        top: 0
+        width: 100%
 
 
 @media (max-width: 960px)
