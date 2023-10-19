@@ -18,7 +18,7 @@
     .teaser-box-wrap 
         .teaser-box
             margin-top: 15px
-            padding: 20% 25px 25px
+            padding: 25% 25px 25px
             position: relative
             width: calc(50% - 7.5px)
             z-index: 2
@@ -60,6 +60,19 @@
             transition: all .4s ease
             width: auto
 
+
+.startseite-wrapper 
+    .teaser-box-wrap 
+        .teaser-box:before 
+            background-image: linear-gradient(0deg,#000,transparent)
+            content: ""
+            height: 100%
+            left: 0
+            opacity: .5
+            position: absolute
+            top: 0
+            width: 0
+            z-index: -1
 
 @media (max-width: 660px)
     .startseite-wrapper .teaser-box-wrap .teaser-box 
