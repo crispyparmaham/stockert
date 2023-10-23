@@ -1,0 +1,38 @@
+.hersteller-grid-wrap
+    grid-column-gap: 15px
+    grid-row-gap: 15px
+    display: grid
+    flex-wrap: wrap
+    grid-template-columns: repeat(3,minmax(200px,1fr))
+    width: 100%
+
+.hersteller-grid-wrap .responsive_table_6, .hersteller-grid-wrap .responsive_table_6:nth-child(6n+0)
+    background: #fff
+    border-bottom: 4px solid #fff
+    box-sizing: border-box
+    padding: 1em
+    transition: all .4s ease
+    width: 100%
+
+.hersteller-grid-wrap .responsive_table_6:nth-child(6n+0)>a, .hersteller-grid-wrap .responsive_table_6>a
+    align-items: center
+    display: flex
+    height: 100%
+    justify-content: center
+    width: 100%
+
+.hersteller-grid-wrap .responsive_table_6:nth-child(6n+0)>a>img, .hersteller-grid-wrap .responsive_table_6>a>img
+    height: 100%!important
+    max-width: 220px
+    -o-object-fit: contain
+    object-fit: contain
+    width: 100%!important
+
+.hersteller-grid-wrap .responsive_table_6:hover, .hersteller-grid-wrap .responsive_table_6:nth-child(6n+0):hover
+    border-bottom-color: $secondary
+    box-shadow: 0 0 20px rgba(0,0,0,.1)
+
+
+@media only screen and (max-width: 700px)
+    .hersteller-grid-wrap
+        grid-template-columns: repeat(2,minmax(120px,1fr))
