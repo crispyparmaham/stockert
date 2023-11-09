@@ -1,0 +1,29 @@
+#template_header
+    #template_main_nav 
+        .template_nav_sortiment_button 
+            ul 
+                // display: flex
+                // flex-wrap: wrap 
+                width: 80%
+                position: absolute
+                left: 20%
+                top: 0
+                padding-left: 0
+                overflow: auto
+                max-height: 100%
+
+        .popup_div 
+            .template_nav_span 
+                .template_wgprev_heading~ul 
+                    li
+                        width: 50%
+    
+    
+@media only screen and (max-width: 30em)
+    .popup_content_menu
+        transform: translateX(-50%)
+
+    .popup_content_search
+        position: absolute
+        transform: translateX(-50%)
+        left: 0
