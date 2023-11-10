@@ -1,3 +1,52 @@
+// LISTE
+
+.alphabet
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center 
+  gap: 10px
+  margin-top: 60px
+  margin-bottom: 40px
+  padding: 25px 0
+  border-top: 1px solid #e6e6e6
+  border-bottom: 1px solid #e6e6e6
+
+  a
+    width: 36px
+    height: 36px
+    color: #2c2c2c
+    font-size: 16px
+    font-weight: 600
+    text-align: center
+    background-color: #f2f2f2
+    border-radius: 50%
+    line-height: 39px
+
+    &:hover 
+      color: #fff
+      background-color: $secondary
+
+  
+.marken-liste 
+  ul
+    list-style-type: none
+    padding: 0
+
+    .list-wrap
+      margin: 5px 0
+      font-size: 16px
+      padding: 12px
+      border-bottom: 1px solid $primary
+
+      li
+        padding: 5px 0
+
+        a:hover
+            color: $secondary
+            text-decoration: underline
+    
 .hersteller-grid-wrap
     grid-column-gap: 15px
     grid-row-gap: 15px

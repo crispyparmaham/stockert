@@ -4,18 +4,19 @@
             ul 
                 // display: flex
                 // flex-wrap: wrap 
-                width: 80%
+                width: 77% !important
                 position: absolute
-                left: 20%
-                top: 0
-                padding-left: 0
+                left: 23%
+                top: 0 !important
+                padding-left: 0 !important
                 overflow: auto
-                max-height: 100%
+                max-height: 100% !important
 
         .popup_div 
             .template_nav_span 
                 .template_wgprev_heading~ul 
                     li
+                        float: left
                         width: 50%
     
     
@@ -27,3 +28,32 @@
         position: absolute
         transform: translateX(-50%)
         left: 0
+
+
+#template_header 
+    #template_main_nav 
+        .popup_div 
+            top: 45px
+
+#template_header 
+    #template_main_nav 
+        span.template_nav_span
+            width: 23% !important
+
+@media only screen and (max-width: 80em)
+    #template_header 
+        #template_main_nav 
+            span.template_nav_span
+                width: 32% !important
+
+@media only screen and (max-width: 60em)
+    #template_header 
+        #template_main_nav 
+            span.template_nav_span
+                width: 49% !important
+
+@media only screen and (max-width: 30em)
+    #template_header 
+        #template_main_nav 
+            span.template_nav_span
+                width: 100% !important
