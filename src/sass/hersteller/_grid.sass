@@ -51,9 +51,9 @@
     grid-column-gap: 15px
     grid-row-gap: 15px
     display: grid
-    flex-wrap: wrap
-    grid-template-columns: repeat(3,minmax(200px,1fr))
-    width: 100%
+    grid-template-columns: repeat(3, 33.33%)
+    width: calc(100% - 40px)
+    gap: 20px
 
 .hersteller-grid-wrap .responsive_table_6, .hersteller-grid-wrap .responsive_table_6:nth-child(6n+0)
     background: #fff
@@ -84,4 +84,11 @@
 
 @media only screen and (max-width: 700px)
     .hersteller-grid-wrap
-        grid-template-columns: repeat(2,minmax(120px,1fr))
+        width: calc(100% - 20px)
+        grid-template-columns: repeat(2, 50%)
+
+  
+@media only screen and (max-width: 580px)
+    .hersteller-grid-wrap
+        width: 100%
+        grid-template-columns: repeat(1, 100%)
