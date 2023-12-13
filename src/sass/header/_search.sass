@@ -1,3 +1,29 @@
+#template_search_text_top
+    border-radius: 2px
+
+.template_search_form
+    position: relative
+
+.accent_button, button.accent_button, input.accent_button
+    background: $secondary
+    border-bottom: none
+    border-radius: 0 2px 2px 0
+
+.template_header_item 
+    .template_search_submit
+        position: absolute
+        top: 0px
+        right: 0px
+        height: 42px
+        width: 42px
+        text-align: center
+
+    .template_search_text
+        height: 42px
+        padding: 10px
+        font-size: 14px
+
+    
 .osearchtext div
     height: auto!important
 
@@ -27,3 +53,11 @@
 
 .oversearch-wrapper p
     margin: 0.25em 0 0
+
+
+@media (max-width: 980px)
+    .oversearch-wrapper
+        display: none
+
+    .template_header_item.template_search
+        width: 100%

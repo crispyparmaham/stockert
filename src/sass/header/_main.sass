@@ -18,12 +18,13 @@
 
 #template_header_list
     padding: 0
-    margin: 25px 0 25px 0
+    margin: 15px !important
     width: 65%
+    float: right
 
 #template_header #template_logo 
-    max-width: 26%
-    margin-top: 10px
+    max-width: 300px
+    margin-top: 5px
 
 #template_main_nav>li>a
     padding: 10px 20px
@@ -67,26 +68,54 @@
         width: 100%
 
 
-@media (max-width: 960px)
+@media (max-width: 980px)
     #template_header #template_header_list
         display: flex
         flex-direction: row-reverse
-        margin-top: 0
-        width: 97%
+        width: calc(100% - 20px) !important
+        align-items: center
+        position: initial
+        margin: 5px !important
+        padding: 0 5px
+        float: initial
+
+
+        .template_account_desc, .template_cart_desc, .template_fav_desc, .template_message_desc
+            display: none
+
+        .template_fav
+            position: absolute
+            top: 10px
+            right: 10px
+
+        .template_cart
+            position: absolute
+            top: 10px
+            right: 80px
+
+        .template_account
+            position: absolute
+            top: 10px
+            right: 140px
+
 
     #template_header #template_header_list .template_header_item
-        margin: 10px
+        margin: 10px 5px 10px 5px
 
     #template_header #template_header_list .template_header_item.template_nav.mobile_show
         background: $secondary
         padding: 0
         
     #template_header #template_logo
-        max-width: 40%
+        max-width: 170px
+        margin-left: 5px
 
     .template_wrapper#top_wrapper .template_header_item a>i
-        height: 50px
-        width: 50px
+        height: 42px
+        width: 42px
+
+        &::before
+            transform: translateY(9px)
 
     .template_wrapper#top_wrapper .template_header_item a>i:before 
         color: #fff
@@ -106,15 +135,32 @@
         font-size: 12px
 
     #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col>img 
-     max-height: 15px
+        max-height: 15px
   
 
+@media (max-width: 960px) 
+    #template_header .template_header_item.template_search
+        width: 100%
 
 @media (max-width: 480px)
-    #template_header_list
-        padding: 0
-        margin-top: 15px !important
-        width: auto !important
+    #template_header #template_header_list
+        margin-top: 0 !important
+        margin-bottom: 5px !important
+
+        .template_fav
+            position: absolute
+            top: 15px
+            right: 10px
+
+        .template_cart
+            position: absolute
+            top: 15px
+            right: 60px
+
+        .template_account
+            position: absolute
+            top: 15px
+            right: 110px
 
     #template_header .template_search_mini
         background: $secondary
@@ -126,6 +172,9 @@
         height: 35px
         width: 35px
 
+        &::before
+            transform: translateY(0)
+
     #template_header .template_header_item > a
         width: fit-content
         height: 50px
@@ -134,4 +183,25 @@
         padding: 10px
         margin-top: 5px
         max-width: 35%
+
+
+    .template_search_mini
+        width: 100%
+        .popup_content_search
+            display: block !important
+            position: relative !important
+            top: 0 !important
+            border: 0 !important
+            padding: 0 !important
+            transform: translateX(0) !important
+            
+
+            &::before, &::after
+                display: none
+
+        .popup_toggle
+            display: none !important
+
+        .template_search_text, .template_search_submit
+            height: 35px
     
