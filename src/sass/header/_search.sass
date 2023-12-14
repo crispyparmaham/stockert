@@ -3,6 +3,7 @@
 
 .template_search_form
     position: relative
+    border-radius: 3px
 
 .accent_button, button.accent_button, input.accent_button
     background: $secondary
@@ -22,6 +23,11 @@
         height: 42px
         padding: 10px
         font-size: 14px
+
+    .mdi-magnify
+        &::before
+            margin-top: 0 !important
+            font-size: 16px !important
 
     
 .osearchtext div
