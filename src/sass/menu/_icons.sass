@@ -45,8 +45,8 @@
                         background-position: center
                         background-repeat: no-repeat
                         display: inline-block
-                        width: 22px
-                        height: 16px
+                        width: 30px
+                        height: 22px
                         position: relative
                         left: -10px
 
@@ -55,43 +55,49 @@
                         background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/sale.png)
 
                 &[title="Elektrowerkzeuge"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/circle-saw.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/elektrowerkzeug_icon.png)
 
                 &[title="Handwerkzeug"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/spanners.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/handwerkzeug_icon.png)
 
                 &[title="Messtechnik"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/angle-ruler.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/messtechnik_icon.png)
 
                 &[title="Befestigungsmaterial"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/screw.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/befestigung_icon.png)
 
                 &[title="Arbeitsschutz"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/hard-hat.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/arbeitsschutz_icon.png)
 
                 &[title="Betriebs- & Baustellenausstattung"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/ladder.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/ausstattung_icon.png)
 
                 &[title="Löten & Schweissen"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/blow-torch.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/schweiss_icon.png)
 
                 &[title="Garten & Landschaftsbau"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/showel.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/gartenbau_icon.png)
 
                 &[title="Reinigung"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/air-can.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/reinigung_icon.png)
 
                 &[title="Spenglerwerkzeuge"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/hammer-icon.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/spengler_icon.png)
 
                 &[title="Sanitärwerkzeuge"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/plumbing-tool.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/sani_icon.png)
 
                 &[title="Druckluft"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/compressor-icon.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/druckluft_icon.png)
 
                 &[title="Allgemeine Werkzeuge"] > i.mdi::before
-                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/tools-icon.png)
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/allgemein_icon.png)
+
+                &[title="Neu im Shop"] > i.mdi::before
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/new_icon.png)
+
+                &[title="Maschinen für Spengler"] > i.mdi::before
+                        background-image: url(https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/spengler-machine_icon.png)
 
             
                 ~ ul 
@@ -112,16 +118,23 @@
                                 
 
 @media only screen and (max-width: 60em)
-        #template_header #template_main_nav .template_wgprev_heading .mdi 
-                display: initial !important
+        .sticky_template_header 
+                #template_header 
+                        #template_main_nav 
+                                .template_wgprev_heading 
+                                        .mdi 
+                                                display: initial !important
 
-        #template_header #template_main_nav .template_nav_sortiment_button ul, #template_header #template_main_nav span.template_nav_span 
-                padding: 0
+                                .template_nav_sortiment_button ul, span.template_nav_span 
+                                        padding: 0
         
-        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading
-                padding: 5px 30px 3px 30px
+                                .popup_div 
+                                        .template_nav_span 
+                                                .template_wgprev_heading
+                                                        padding: 5px 30px 3px 30px
 
-        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading i.mdi.mdi-chevron-right:before
-                top: 3px
+                                                        i.mdi.mdi-chevron-right
+                                                                &:before
+                                                                        top: 3px
                                         
 
