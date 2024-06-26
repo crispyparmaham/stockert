@@ -151,10 +151,25 @@
     border-top-color: $primary
     font-weight: 400
 
-#template_footer_wrapper ul li
-    list-style: "\2713"
-    padding-left: 10px
-    margin-bottom: 5px
+#template_footer_wrapper 
+  ul
+    li 
+      list-style: none
+      margin-bottom: 5px
+      padding-left: 25px
+      position: relative
+
+      &::before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        width: 14px
+        height: 14px
+        background-image: url('https://shop.maschinen-stockert.de/benutzerdaten/400032/shop/layout/images/icons/checkmark.png')
+        background-size: contain
+        background-repeat: no-repeat
+
 
 .grid-wrap-footer
     display: flex
